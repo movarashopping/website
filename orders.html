@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orders - Movara Admin</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<style>
+
+.container{
+max-width:1200px;
+margin:30px auto;
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.topbar h2{
+color:#0d5c2d;
+}
+
+.btn{
+background:#0d5c2d;
+color:#fff;
+padding:10px 18px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+margin-left:10px;
+}
+
+.btn:hover{
+background:#083c1c;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#0d5c2d;
+color:#fff;
+padding:12px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+.pending{
+color:#ff9800;
+font-weight:bold;
+}
+
+.shipped{
+color:#2196f3;
+font-weight:bold;
+}
+
+.delivered{
+color:#4caf50;
+font-weight:bold;
+}
+
+.cancelled{
+color:#f44336;
+font-weight:bold;
+}
+
+select{
+padding:6px;
+border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="topbar">
+
+<h2>Orders Management</h2>
+
+<div>
+<a href="admin.html" class="btn">Dashboard</a>
+<a href="products.html" class="btn">Products</a>
+</div>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Order ID</th>
+<th>Customer</th>
+<th>Amount</th>
+<th>Payment</th>
+<th>Status</th>
+<th>Update</th>
+</tr>
+
+</thead>
+
+<tbody id="ordersTable">
+
+<tr>
+<td>#1001</td>
+<td>Prince Sharma</td>
+<td>₹599</td>
+<td>Online</td>
+<td class="pending">Pending</td>
+
+<td>
+
+<select>
+
+<option>Pending</option>
+<option>Shipped</option>
+<option>Delivered</option>
+<option>Cancelled</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+<td colspan="6">
+More Orders Will Load From Firebase
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script type="module" src="orders.js"></script>
+
+</body>
+</html>
