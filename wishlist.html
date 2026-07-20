@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wishlist | Movara Shopping</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.wishlist-container{
+max-width:1200px;
+margin:50px auto;
+padding:20px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+overflow:hidden;
+text-align:center;
+padding-bottom:20px;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px 0;
+color:#0b6b2f;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#0b6b2f;
+margin-bottom:15px;
+}
+
+.btn{
+display:block;
+width:85%;
+margin:10px auto;
+padding:12px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.cart-btn{
+background:#0b6b2f;
+color:#fff;
+}
+
+.remove-btn{
+background:#d32f2f;
+color:#fff;
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Movara Shopping
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="wishlist.html">Wishlist</a>
+
+<a href="cart.html">Cart</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<div class="wishlist-container">
+
+<h1 style="text-align:center;color:#0b6b2f;margin-bottom:35px;">
+
+My Wishlist ❤️
+
+</h1>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://via.placeholder.com/300x220?text=Turmeric+Powder">
+
+<h3>Turmeric Powder</h3>
+
+<div class="price">
+
+₹120
+
+</div>
+
+<button class="btn cart-btn">
+
+Add To Cart
+
+</button>
+
+<button class="btn remove-btn">
+
+Remove
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/300x220?text=Premium+Tea">
+
+<h3>Premium Tea</h3>
+
+<div class="price">
+
+₹250
+
+</div>
+
+<button class="btn cart-btn">
+
+Add To Cart
+
+</button>
+
+<button class="btn remove-btn">
+
+Remove
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/300x220?text=Red+Chilli">
+
+<h3>Red Chilli Powder</h3>
+
+<div class="price">
+
+₹150
+
+</div>
+
+<button class="btn cart-btn">
+
+Add To Cart
+
+</button>
+
+<button class="btn remove-btn">
+
+Remove
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Movara Industries</h3>
+
+<p>Customer Support : +91 79830 01102</p>
+
+<p>Email : movaraindustries@gmail.com</p>
+
+<p>
+
+Near Primary School,<br>
+
+Timarua,<br>
+
+Post Hardoi,<br>
+
+Etawah,<br>
+
+Uttar Pradesh - 206253,<br>
+
+India.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Movara Shopping. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
