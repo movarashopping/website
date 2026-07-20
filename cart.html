@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | Movara Shopping</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.cart-container{
+max-width:1200px;
+margin:50px auto;
+padding:20px;
+}
+
+.cart-table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.cart-table th{
+background:#0b6b2f;
+color:#fff;
+padding:15px;
+}
+
+.cart-table td{
+padding:15px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+.cart-table img{
+width:80px;
+border-radius:8px;
+}
+
+.quantity{
+width:70px;
+padding:8px;
+text-align:center;
+}
+
+.remove-btn{
+background:red;
+color:#fff;
+border:none;
+padding:8px 14px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.summary{
+margin-top:30px;
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.summary h2{
+color:#0b6b2f;
+margin-bottom:15px;
+}
+
+.checkout-btn{
+width:100%;
+padding:15px;
+background:#0b6b2f;
+color:white;
+border:none;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.checkout-btn:hover{
+background:#084c22;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Movara Shopping
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<div class="cart-container">
+
+<h1 style="text-align:center;color:#0b6b2f;margin-bottom:30px;">
+Shopping Cart
+</h1>
+
+<table class="cart-table">
+
+<tr>
+
+<th>Product</th>
+
+<th>Name</th>
+
+<th>Price</th>
+
+<th>Qty</th>
+
+<th>Total</th>
+
+<th>Remove</th>
+
+</tr>
+
+<tr>
+
+<td>
+<img src="https://via.placeholder.com/80x80?text=Haldi">
+</td>
+
+<td>Turmeric Powder</td>
+
+<td>₹120</td>
+
+<td>
+<input type="number" value="1" min="1" class="quantity">
+</td>
+
+<td>₹120</td>
+
+<td>
+<button class="remove-btn">Remove</button>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+<img src="https://via.placeholder.com/80x80?text=Tea">
+</td>
+
+<td>Premium Tea</td>
+
+<td>₹250</td>
+
+<td>
+<input type="number" value="1" min="1" class="quantity">
+</td>
+
+<td>₹250</td>
+
+<td>
+<button class="remove-btn">Remove</button>
+</td>
+
+</tr>
+
+</table>
+
+<div class="summary">
+
+<h2>Order Summary</h2>
+
+<p><b>Subtotal :</b> ₹370</p>
+
+<p><b>Shipping :</b> ₹50</p>
+
+<p><b>Discount :</b> ₹0</p>
+
+<hr><br>
+
+<h2>Total : ₹420</h2>
+
+<br>
+
+<button class="checkout-btn">
+
+Proceed to Checkout
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Movara Industries</h3>
+
+<p>Customer Support : +91 79830 01102</p>
+
+<p>Email : movaraindustries@gmail.com</p>
+
+<p>
+
+Near Primary School,<br>
+
+Timarua,<br>
+
+Post Hardoi,<br>
+
+Etawah,<br>
+
+Uttar Pradesh - 206253,<br>
+
+India.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Movara Shopping. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
