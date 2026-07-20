@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movara Shopping - Admin Panel</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Movara Admin</h2>
+
+<ul>
+<li><a href="#">🏠 Dashboard</a></li>
+<li><a href="#">📦 Products</a></li>
+<li><a href="#">🛒 Orders</a></li>
+<li><a href="#">👥 Customers</a></li>
+<li><a href="#">📂 Categories</a></li>
+<li><a href="#">⚙ Settings</a></li>
+<li><a href="index.html">🌐 Website</a></li>
+<li><a href="login.html">🚪 Logout</a></li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>Admin Dashboard</h1>
+
+<div class="admin-user">
+Admin: movaraindustries@gmail.com
+</div>
+
+</header>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Products</h2>
+<h1 id="totalProducts">0</h1>
+</div>
+
+<div class="card">
+<h2>Total Orders</h2>
+<h1 id="totalOrders">0</h1>
+</div>
+
+<div class="card">
+<h2>Total Customers</h2>
+<h1 id="totalCustomers">0</h1>
+</div>
+
+<div class="card">
+<h2>Total Sales</h2>
+<h1 id="totalSales">₹0</h1>
+</div>
+
+</div>
+
+<section class="product-section">
+
+<h2>Product Management</h2>
+
+<button id="addProductBtn">
+➕ Add New Product
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Image</th>
+<th>Name</th>
+<th>Price</th>
+<th>Stock</th>
+<th>Category</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="productTable">
+
+<tr>
+<td colspan="6" align="center">
+No Products Available
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
